@@ -19,7 +19,7 @@ public class Trabalhadorestest {
         trabalhador2.nome = "Luana";
         trabalhador2.sexo = 'f';
 
-     impressora.imprime(trabalhador1);
-     impressora.imprime(trabalhador2);
+        impressora.imprime(trabalhador1);
+        impressora.imprime(trabalhador2);
     }
 }

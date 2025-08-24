@@ -4,9 +4,9 @@ public class ImpressoraTrabalhadores {
     public void imprime(Trabalhadores trabalhadores) {
         System.out.println("------------------");
 
-        System.out.println(trabalhadores.idade);
-        System.out.println(trabalhadores.nome);
-        System.out.println(trabalhadores.sexo);
+        System.out.println(" Idade do Trabalhador " + trabalhadores.idade);
+        System.out.println(" Nome do Trabalhador " + trabalhadores.nome);
+        System.out.println("Sexo do trabalhador(a) " + trabalhadores.sexo);
 
 
     }
