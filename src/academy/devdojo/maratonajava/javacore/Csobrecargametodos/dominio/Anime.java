@@ -5,6 +5,7 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String qualidade;
 
     public void init(String nome, String tipo, int episodios) {
         this.nome = nome;
@@ -20,15 +21,30 @@ public class Anime {
 
     }
 
+    public void init(String nome, String tipo, int episodios, String genero, String qualidade) {
+        this.init(nome, tipo, episodios, genero);
+        this.qualidade = qualidade;
 
-
-    public void imprime() {
-        System.out.println(this.tipo);
-        System.out.println(this.episodios);
-        System.out.println(this.nome);
-        System.out.println(this.genero);
 
     }
+
+    public void imprime() {
+        System.out.println("tipo: " + this.tipo);
+        System.out.println("episodios: " + this.episodios);
+        System.out.println("nome: " + this.nome);
+        System.out.println("genero: " + this.genero);
+        System.out.println("qualidade: " + this.qualidade);
+
+    }
+
+    public void setQualidade(String qualidade) {
+        this.qualidade = qualidade;
+    }
+
+    public String getQualidade() {
+        return qualidade;
+    }
+
 
     public void setGenero(String genero) {
         this.genero = genero;
